@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class InstagramInfo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Read inputs
+        String name = sc.nextLine();      
+        int followers = sc.nextInt();     
+        int posts = sc.nextInt();         
+        float hours = sc.nextFloat();     
+
+        System.out.printf(
+            "My name is %s, my Instagram has %d followers, I have posted %d posts, and I use Instagram for %.1f hours daily.%n",
+            name, followers, posts, hours
+        );
+
+        sc.close();
+    }
+}
