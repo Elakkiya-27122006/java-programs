@@ -1,0 +1,24 @@
+//ou are given three inputs:
+An integer representing a person's age.
+A floating-point number representing their height in meters.
+A string representing their name.//
+import java.util.Scanner;
+
+public class PersonInfo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Read inputs
+        int age = sc.nextInt();         // integer age
+        double height = sc.nextDouble(); // floating-point height in meters
+        String name = sc.next();         // string name (no spaces)
+
+        // Output the results
+        System.out.println("Age: " + age);
+        System.out.printf("Height: %.2f m%n", height);
+        System.out.println("Name: " + name);
+
+        sc.close();
+    }
+}
+
