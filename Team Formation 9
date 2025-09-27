@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class TeamsDivision {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Read input
+        int totalPlayers = sc.nextInt();
+        int playersPerTeam = sc.nextInt();
+
+        // Calculate
+        int teams = totalPlayers / playersPerTeam;
+        int leftOut = totalPlayers % playersPerTeam;
+
+        // Output
+        System.out.println("Total teams formed: " + teams);
+        System.out.println("Players left out: " + leftOut);
+
+        sc.close();
+    }
+}
